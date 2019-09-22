@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>医生管理界面</title>
+    <link rel="stylesheet" href="../static/css/layui.min.css">
+    <!--先加载jquery-->
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://excel.wj2015.com/layui_exts/excel.js"></script>
+    <script>
+         function exportTable() {
+              // 获取头部和body
+              var data = LAY_EXCEL.tableToJson(document.getElementById('LAY-EXPORT-TEST'));
+              console.log(data);
+              var exportData = [];
+              exportData.push.apply(exportData, data.head);
+              exportData.push.apply(exportData, data.body);
+            console.log(exportData);
+              LAY_EXCEL.exportExcel(exportData, '表格导出.xlsx', 'xlsx');
+            }
+    </script>
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+    <#include "../menu.flt"/>
+    <div class="layui-body">
+        <!-- 内容主体区域 -->
+        <div style="padding: 15px;">
+            <form action="/admin/doctorManage" method="get">
+            <table>
+                <tr>
+                    <td>昵称:</td>
+                    <td><input name="name" autocomplete="off" value="${name!''}" class="layui-input lay-size=sm" ></td>
+                    <td>&nbsp;&nbsp;证件号:</td>
+                    <td><input name="certId" autocomplete="off" value="${certId!''}" class="layui-input lay-size=sm" ></td>
+                    <td><button class="layui-btn" type="submit"><i class="layui-icon">&#xe615;</i></button></td>
+                    <td><button class="layui-btn" type="submit"  onclick="exportTable()" ><i>导出表格</i></button></td>
+                    <td><button class="layui-btn" onclick="showAdd('/admin/doctorAdd')"><i class="layui-icon">&#xe608;</i> 添加</button><td>
+
+                </tr>
+            </table>
+            </form>
+
+
+
+            <table class="layui-table" id="LAY-EXPORT-TEST" border >
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                        <th>5</th>
+                        <th>6</th>
+                        <th>7</th>
+                        <th>8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <#list doctors as d>
+                    <tr>
+                        <td>${d_index+1}</td>
+                        <td>${d.name}</td>
+                        <td>${d.expert}</td>
+                        <td>${d.age}</td>
+                        <td>${d.sex}</td>
+                        <td>${d.certId}</td>
+                        <td>${d.department}</td>
+                        <td>${d.address}</td>
+                    </tr>
+                </#list>
+                </tbody>
+            </table>
+            <#--<div id="test1"></div>-->
+        </div>
+    </div>
+    <#include "../foot.flt"/>
+</div>
+  <!--先加载jquery-->
+    <script src="../static/js/layui.all.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function(){
+            var element = layui.element;
+        });
+        layui.use('laypage', function(){
+            var laypage = layui.laypage;
+            //执行一个laypage实例
+            laypage.render({
+                elem: '#LAY-EXPORT-TEST' //注意，这里的 test1 是 ID，不用加 # 号
+                ,count: 5 //数据总数，从服务端得到
+                ,toolbar: '#LAY-EXPORT-TEST' //操作1:启用自定义模板表格头部工具栏
+                ,defaultToolbar: [] //操作2:隐藏头部工具栏右侧的图标
+                ,limit:5
+            });
+        });
+    </script>
+</body>
+</html>
