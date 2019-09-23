@@ -6,8 +6,8 @@
     <title>医生管理界面</title>
     <link rel="stylesheet" href="../static/css/layui.min.css">
     <!--先加载jquery-->
-  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://excel.wj2015.com/layui_exts/excel.js"></script>
+  <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/excel.js"></script>
     <script>
          function exportTable() {
               // 获取头部和body
@@ -46,17 +46,169 @@
 
             <table class="layui-table" id="LAY-EXPORT-TEST" border >
                 <thead>
-                    <tr>
-                        <th>1</th>
-                        <th>2</th>
-                        <th>3</th>
-                        <th>4</th>
-                        <th>5</th>
-                        <th>6</th>
-                        <th>7</th>
-                        <th>8</th>
-                    </tr>
-                </thead>
+                                   <tr>
+                                       <th>A01</th>
+                                       <th>A02</th>
+                                       <th>A48</th>
+                                       <th>A49</th>
+                                       <th>B12</th>
+                                       <th>B15</th>
+                                       <th>A47</th>
+                                       <th>A46C</th>
+                                       <th>A11</th>
+                                       <th>A12C</th>
+                                       <th>A13</th>
+                                       <th>A14</th>
+                                       <th>A15C</th>
+                                       <th>A21C</th>
+                                       <th>A38C</th>
+                                       <th>A19C</th>
+                                       <th>A20</th>
+                                       <th>A22</th>
+                                       <th>A23C</th>
+                                       <th>A24</th>
+                                       <th>A25C</th>
+                                       <th>A26</th>
+                                       <th>A27</th>
+                                       <th>A28C</th>
+                                       <th>A29</th>
+                                       <th>A30</th>
+                                       <th>A31C</th>
+                                       <th>A32</th>
+                                       <th>A33C</th>
+                                       <th>A34</th>
+                                       <th>A35</th>
+                                       <th>B11C</th>
+                                       <th>B13C</th>
+                                       <th>B14</th>
+                                       <th>B21C</th>
+                                       <th>B16C</th>
+                                       <th>B17</th>
+                                       <th>B20</th>
+                                       <th>C01C</th>
+                                       <th>C02N</th>
+                                       <th>C03C</th>
+                                       <th>C04N</th>
+                                       <th>C05C</th>
+                                       <th>C06x01C</th>
+                                       <th>C07x01N</th>
+                                       <th>C08x01C</th>
+                                       <th>C06x02C</th>
+                                       <th>C07x02N</th>
+                                       <th>C08x02C</th>
+                                       <th>C06x03C</th>
+                                       <th>C07x03N</th>
+                                       <th>C08x03C</th>
+                                       <th>C06x04C</th>
+                                       <th>C07x04N</th>
+                                       <th>C08x04C</th>
+                                       <th>C06x05C</th>
+                                       <th>C07x05N</th>
+                                       <th>C08x05C</th>
+
+                                       <th>C06x06C</th>
+                                       <th>C07x06N</th>
+                                       <th>C08x06C</th>
+                                       <th>C06x07C</th>
+                                       <th>C07x07N</th>
+                                       <th>C08x07C</th>
+                                       <th>C06x08C</th>
+                                       <th>C07x08N</th>
+                                       <th>C08x08C</th>
+                                       <th>C06x09C</th>
+                                       <th>C07x09N</th>
+                                       <th>C08x09C</th>
+                                       <th>C06x10C</th>
+                                       <th>C07x10N</th>
+                                       <th>C08x10C</th>
+                                       <th>C06x11C</th>
+                                       <th>C07x11N</th>
+                                       <th>C08x11C</th>
+                                       <th>C06x12C</th>
+                                       <th>C07x12N</th>
+                                       <th>C08x12C</th>
+                                       <th>C06x13C</th>
+                                       <th>C07x13N</th>
+                                       <th>C08x13C</th>
+                                       <th>C06x14C</th>
+                                       <th>C07x14N</th>
+                                       <th>C08x14C</th>
+                                       <th>C06x15C</th>
+                                       <th>C07x15N</th>
+                                       <th>C08x15C</th>
+                                       <th>C06x16C</th>
+                                       <th>C07x16N</th>
+                                       <th>C08x16C</th>
+                                       <th>C06x17C</th>
+                                       <th>C07x17N</th>
+                                       <th>C08x17C</th>
+                                       <th>C06x18C</th>
+                                       <th>C07x18N</th>
+                                       <th>C08x18C</th>
+               <th>C06x19C</th>	<th>C07x19N</th>
+               <th>C08x19C</th>	<th>C06x20C</th>
+               <th>C07x20N</th>	<th>C08x20C</th>
+               <th>C06x21C</th>	<th>C07x21N</th>
+               	<th>C08x21C</th>	<th>C06x22C</th>
+               	<th>C07x22N</th>	<th>C08x22C</th>
+               		<th>C06x23C</th>	<th>C07x23N</th>
+               		<th>C08x23C</th>	<th>C06x24C</th>
+               			<th>C07x24N</th>	<th>C08x24C</th>
+               				<th>C06x25C</th>	<th>C07x25N</th>
+               				<th>C08x25C</th>	<th>C06x26C</th>
+               					<th>C07x26N</th>	<th>C08x26C</th>
+               						<th>C06x27C</th>	<th>C07x27N</th>
+               							<th>C08x27C</th>	<th>C06x28C</th>
+               							<th>C07x28N</th>	<th>C08x28C</th>	<th>C06x29C</th>	<th>C07x29N</th>	<th>C08x29C</th>
+               								<th>C06x30C</th>	<th>C07x30N</th>	<th>C08x30C</th>	<th>C06x31C</th>	<th>C07x31N</th>
+               								<th>C08x31C</th>	<th>C06x32C</th>	<th>C07x32N</th>	<th>C08x32C</th>	<th>C06x33C</th>	<th>C07x33N</th>
+               									<th>C08x33C</th>	<th>C06x34C</th>	<th>C07x34N</th>	<th>C08x34C</th>	<th>C06x35C</th>	<th>C07x35N</th>
+               										<th>C08x35C</th>	<th>C06x36C</th>	<th>C07x36N</th>	<th>C08x36C</th>	<th>C06x37C</th>	<th>C07x37N</th>
+               											<th>C08x37C</th>	<th>C06x38C</th>	<th>C07x38N</th>	<th>C08x38C</th>	<th>C06x39C</th>	<th>C07x39N</th>
+               												<th>C08x39C</th>	<th>C06x40C</th>	<th>C07x40N</th>	<th>C08x40C</th>	<th>C09C</th>	<th>C10N</th>
+               												<th>C11</th>	<th>C12C</th>
+               <th>C13N</th>	<th>C24C</th>	<th>C25</th>	<th>B22</th>	<th>B23</th>	<th>B24</th>	<th>B25</th>	<th>B26</th>	<th>B27</th>	<th>B28</th>
+               	<th>B29	<th>B30C</th>	<th>B31</th>	<th>B32</th>	<th>B33</th>	<th>C34C</th>	<th>C26C</th>	<th>C27C</th>
+               	<th>C14x01C</th>	<th>C15x01N</th>	<th>C16x01</th>	<th>C17x01</th>	<th>C18x01</th>	<th>C19x01</th>	<th>C20x01</th>	<th>C21x01C</th>
+               	<th>C22x01C</th>	<th>C23x01</th>	<th>C35x01C</th>	<th>C36x01N</th>	<th>C37x01</th>	<th>C38x01</th>	<th>C39x01</th>	<th>C40x01</th>
+               	<th>C41x01</th>	<th>C42x01C</th>	<th>C43x01C</th>	<th>C44x01</th>	<th>C35x02C</th>	<th>C36x02N</th>	<th>C37x02</th>	<th>C38x02</th>
+               	<th>C39x02</th>	<th>C40x02</th>	<th>C41x02</th>	<th>C42x02C</th>	<th>C43x02C</th>	<th>C44x02</th>	<th>C35x03C</th>	<th>C36x03N</th>
+               	<th>C37x03</th>	<th>C38x03</th>	<th>C39x03</th>	<th>C40x03</th>	<th>C41x03</th>	<th>C42x03C</th>	<th>C43x03C</th>	<th>C44x03</th>	<th>C35x04C</th>
+               		<th>C36x04N</th>	<th>C37x04</th>	<th>C38x04</th>	<th>C39x04</th>	<th>C40x04</th>	<th>C41x04</th>	<th>C42x04C</th>	<th>C43x04C</th>
+               			<th>C44x04</th>	<th>C35x05C</th>	<th>C36x05N</th>	<th>C37x05</th>	<th>C38x05</th>	<th>C39x05</th>	<th>C40x05</th>	<th>C41x05</th>
+               			<th>C42x05C</th>	<th>C43x05C</th>	<th>C44x05</th>	<th>C35x06C</th>	<th>C36x06N</th>	<th>C37x06</th>	<th>C38x06</th>	<th>C39x06</th>
+               			<th>C40x06</th>	<th>C41x06</th>	<th>C42x06C</th>	<th>C43x06C</th>	<th>C44x06</th>	<th>C35x07C</th> <th>C36x07N</th>	<th>C37x07</th>
+               			<th>C38x07</th>	<th>C39x07</th>	<th>C40x07</th>	<th>C41x07</th>	<th>C42x07C</th>	<th>C43x07C</th>	<th>C44x07</th>	<th>C35x08C</th>
+               			<th>C36x08N</th>	<th>C37x08</th>	<th>C38x08</th>	<th>C39x08</th>	<th>C40x08</th>	<th>C41x08</th>	<th>C42x08C</th>	<th>C43x08C</th>
+               			<th>C44x08</th>	<th>C35x09C</th>	<th>C36x09N</th>	<th>C37x09</th>	<th>C38x09</th>	<th>C39x09</th>	<th>C40x09</th>	<th>C41x09</th>	<th>C42x09C</th>	<th>C43x09C</th>	<th>C44x09</th>	<th>C35x10C</th>	<th>C36x10N</th>	<th>C37x10</th>	<th>C38x10</th>	<th>C39x10</th>	<th>C40x10</th>	<th>C41x10</th>	<th>C42x10C</th>	<th>C43x10C</th>	<th>C44x10</th>	<th>C35x11C</th>	<th>C36x11N</th>	<th>C37x11</th>	<th>C38x11</th> <th>C39x11</th>	<th>C40x11</th>	<th>C41x11</th>	<th>C42x11C</th>	<th>C43x11C</th>	<th>C44x11</th>	<th>C35x12C</th>	<th>C36x12N</th>	<th>C37x12</th>	<th>C38x12</th>	<th>C39x12</th>	<th>C40x12</th>	<th>C41x12</th>	<th>C42x12C</th>	<th>C43x12C</th>	<th>C44x12</th>	<th>C35x13C</th>	<th>C36x13N</th>	<th>C37x13</th>	<th>C38x13</th>	<th>C39x13</th>	<th>C40x13</th>	<th>C41x13</th>	<th>C42x13C</th>	<th>C43x13C</th>	<th>C44x13</th>	<th>C35x14C</th>	<th>C36x14N</th>	<th>C37x14</th>	<th>C38x14</th>	<th>C39x14</th>	<th>C40x14</th>	<th>C41x14</th>	<th>C42x14C</th>	<th>C43x14C</th>	<th>C44x14</th>	<th>C35x15C</th>	<th>C36x15N</th>	<th>C37x15</th>	<th>C38x15</th>	<th>C39x15</th>	<th>C40x15</th>	<th>C41x15</th>	<th>C42x15C</th>	<th>C43x15C</th>	<th>C44x15</th>	<th>C35x16C</th>	<th>C36x16N</th>	<th>C37x16</th>	<th>C38x16</th>	<th>C39x16</th>	<th>C40x16</th>	<th>C41x16</th>	<th>C42x16C</th>	<th>C43x16C</th>	<th>C44x16</th>	<th>C35x17C</th>	<th>C36x17N</th>	<th>C37x17</th>	<th>C38x17</th>	<th>C39x17</th>	<th>C40x17</th>	<th>C41x17</th>	<th>C42x17C</th>	<th>C43x17C</th>	<th>C44x17</th>	<th>C35x18C</th>	<th>C36x18N</th>	<th>C37x18</th>	<th>C38x18</th>	<th>C39x18</th>	<th>C40x18</th>	<th>C41x18</th>	<th>C42x18C</th>	<th>C43x18C</th>	<th>C44x18</th>	<th>C35x19C</th>	<th>C36x19N</th>	<th>C37x19</th>	<th>C38x19</th>	<th>C39x19</th>	<th>C40x19</th>	<th>C41x19</th>	<th>C42x19C</th>	<th>C43x19C</th>
+               <th>C44x19</th>	<th>C35x20C</th>	<th>C36x20N</th>	<th>C37x20</th>	<th>C38x20</th>	<th>C39x20</th>	<th>C40x20</th>	<th>C41x20</th>	<th>C42x20C</th>
+               	<th>C43x20C</th>	<th>C44x20</th>	<th>C35x21C</th>	<th>C36x21N</th>	<th>C37x21</th>	<th>C38x21</th>	<th>C39x21</th>	<th>C40x21</th>
+               		<th>C41x21</th>	<th>C42x21C</th>	<th>C43x21C</th>	<th>C44x21</th>	<th>C35x22C</th>
+               		<th>C36x22N</th>	<th>C37x22</th>	<th>C38x22</th>	<th>C39x22</th>	<th>C40x22</th>	<th>C41x22</th>
+               			<th>C42x22C</th>	<th>C43x22C</th>	<th>C44x22</th>	<th>C35x23C</th>	<th>C36x23N</th>
+               			<th>C37x23</th>	<th>C38x23</th>	<th>C39x23</th>	<th>C40x23</th>	<th>C41x23</th>	<th>C42x23C</th>
+               				<th>C43x23C</th>	<th>C44x23</th>	<th>C35x24C</th>	<th>C36x24N</th>	<th>C37x24</th>	<th>C38x24</th>
+               					<th>C39x24</th>	<th>C40x24</th>	<th>C41x24</th>	<th>C42x24C</th>	<th>C43x24C</th>	<th>C44x24</th>
+               					<th>C35x25C</th>	<th>C36x25N</th>	<th>C37x25</th>	<th>C38x25</th>	<th>C39x25</th>	<th>C40x25</th>	<th>C41x25</th>
+               						<th>C42x25C</th>	<th>C43x25C</th>	<th>C44x25</th>	<th>C35x26C</th>	<th>C36x26N</th>	<th>C37x26</th>
+               						<th>C38x26</th>	<th>C39x26</th>	<th>C40x26</th>	<th>C41x26</th>	<th>C42x26C</th>	<th>C43x26C</th>	<th>C44x26</th>
+               							<th>C35x27C</th>	<th>C36x27N</th>	<th>C37x27</th>	<th>C38x27</th>	<th>C39x27</th>	<th>C40x27</th>	<th>C41x27</th>
+               								<th>C42x27C</th> <th>C43x27C</th>	<th>C44x27</th>	<th>C35x28C</th>	<th>C36x28N</th>	<th>C37x28</th>	<th>C38x28</th>
+               								<th>C39x28</th>	<th>C40x28</th>	<th>C41x28</th>	<th>C42x28C</th>	<th>C43x28C</th>	<th>C44x28</th>	<th>C35x29C</th>
+               								<th>C36x29N</th>	<th>C37x29</th>	<th>C38x29</th>	<th>C39x29</th>	<th>C40x29</th>	<th>C41x29</th>	<th>C42x29C</th>
+               								<th>C43x29C</th>	<th>C44x29</th>	<th>C35x30C</th>	<th>C36x30N</th>	<th>C37x30</th>	<th>C38x30</th>	<th>C39x30</th>
+               									<th>C40x30</th>	<th>C41x30</th>	<th>C42x30C</th>	<th>C43x30C</th>	<th>C44x30</th>	<th>C35x31C</th>	<th>C36x31N</th>
+               										<th>C37x31</th>	<th>C38x31</th>	<th>C39x31</th>	<th>C40x31</th>	<th>C41x31</th>	<th>C42x31C</th>	<th>C43x31C</th>
+               											<th>C44x31</th>	<th>C35x32C</th>	<th>C36x32N</th>	<th>C37x32</th>	<th>C38x32</th>	<th>C39x32</th>
+               											<th>C40x32</th>	<th>C41x32</th>	<th>C42x32C</th>	<th>C43x32C</th>	<th>C44x32</th>	<th>C35x33C</th>
+               											<th>C36x33N</th>	<th>C37x33</th>	<th>C38x33</th>	<th>C39x33</th>	<th>C40x33</th>	<th>C41x33</th>	<th>C42x33C</th>
+               												<th>C43x33C</th>	<th>C44x33</th>	<th>C35x34C</th>	<th>C36x34N</th> <th>C37x34</th>	<th>C38x34</th>
+               												<th>C39x34</th>	<th>C40x34</th>	<th>C41x34</th>	<th>C42x34C</th>	<th>C43x34C</th>
+               													<th>C44x34</th>	<th>C35x35C</th>	<th>C36x35N</th>	<th>C37x35</th>	<th>C38x35</th>	<th>C39x35</th>	<th>C40x35</th>	<th>C41x35</th>	<th>C42x35C</th>	<th>C43x35C</th>	<th>C44x35</th>	<th>C35x36C</th> <th>C36x36N</th>	<th>C37x36</th>	<th>C38x36</th>	<th>C39x36</th>	<th>C40x36</th>	<th>C41x36</th>	<th>C42x36C</th>	<th>C43x36C</th>	<th>C44x36</th>	<th>C35x37C</th>	<th>C36x37N</th>	<th>C37x37</th>	<th>C38x37</th>	<th>C39x37</th>	<th>C40x37</th>	<th>C41x37</th>	<th>C42x37C</th>	<th>C43x37C</th>	<th>C44x37</th>	<th>C35x38C</th>	<th>C36x38N</th>	<th>C37x38</th>	<th>C38x38</th>	<th>C39x38</th>	<th>C40x38</th>	<th>C41x38</th>	<th>C42x38C</th>	<th>C43x38C</th>	<th>C44x38</th>	<th>C35x39C</th>	<th>C36x39N	<th>C37x39	<th>C38x39	<th>C39x39	<th>C40x39	<th>C41x39	<th>C42x39C	<th>C43x39C	<th>C44x39	<th>C35x40C	<th>C36x40N	<th>C37x40	<th>C38x40</th>	<th>C39x40</th>	<th>C40x40</th>	<th>C41x40</th>	<th>C42x40C</th>	<th>C43x40C</th>	<th>C44x40</th>	<th>A16</th> <th>A18x01</th>	<th>A18x02</th>	<th>A18x03</th>	<th>A18x04</th>	<th>A18x05</th>	<th>A17	</th><th>C28</th>	<th>C29</th>	<th>C30</th>	<th>C31	</th><th>C32</th>	<th>C33</th>	<th>B36C</th>	<th>B37</th>	<th>B34C</th>	<th>B35</th>	<th>D01</th>	<th>D09</th>	<th>D11</th>	<th>D12</th>	<th>D13</th>	<th>D14</th>	<th>D15</th>	<th>D16</th>	<th>D17</th>	<th>D18</th>	<th>D19</th>	<th>D19x01</th>	<th>D20</th>	<th>D20x01</th>	<th>D20x02</th>	<th>D21</th>	<th>D22</th> <th>D23</th>	<th>D23x01</th>	<th>D24</th>	<th>D25</th>	<th>D26</th>	<th>D27</th>	<th>D28</th>	<th>D29</th>	<th>D30</th>	<th>D31</th>	<th>D32</th>	<th>D33</th>	<th>D34</th>
+
+
+                                   </tr>
+                               </thead>
                 <tbody>
                 <#list doctors as d>
                     <tr>
