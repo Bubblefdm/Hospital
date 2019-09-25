@@ -1,5 +1,7 @@
 server:
-  port: 8080
+  port: 8088
+  servlet:
+      context-path: /
 spring:
   datasource:
     url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=nfhis

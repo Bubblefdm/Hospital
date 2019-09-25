@@ -10,10 +10,10 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @MapperScan("com.hospital.dao")
 public class HospitalApp  extends SpringBootServletInitializer {
         //    使用自带tomcat启动
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(HospitalApp.class);
-    }
+//    @Override
+//    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
+//        return application.sources(HospitalApp.class);
+//    }
     public static void main(String[] args){
         SpringApplication.run(HospitalApp.class,args);
     }
