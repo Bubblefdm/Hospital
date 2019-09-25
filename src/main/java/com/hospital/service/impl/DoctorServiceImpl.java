@@ -2,6 +2,7 @@ package com.hospital.service.impl;
 
 import com.hospital.common.CommonService;
 import com.hospital.dao.*;
+import com.hospital.entity.Aaa;
 import com.hospital.entity.Doctor;
 import com.hospital.entity.Login;
 import com.hospital.entity.Seek;
@@ -27,9 +28,11 @@ public class DoctorServiceImpl implements DoctorService {
     SeekMapper seekMapper;
     @Autowired
     OptionMapper optionMapper;
+    @Autowired
+    AaaMapper aaaMapper;
     @Override
-    public List<Doctor> getAllDoctor() {
-        return doctorMapper.getAll("","");
+    public List<Aaa> getAllDoctor() {
+        return aaaMapper.getAll();
     }
 
     @Override
