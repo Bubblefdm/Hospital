@@ -258,8 +258,42 @@
     <result column="一般治疗操作费(ZLCZF)"                   property="一般治疗操作费zlczf" jdbcType="NVARCHAR" />
     <result column="护理费(HLF)"                           property="护理费hlf" jdbcType="NVARCHAR" />
     <result column="其他费用(QTFY)"                         property="其他费用qtfy" jdbcType="NVARCHAR" />
+    <result column="病案号(BAH1)" property="病案号bah1" jdbcType="NVARCHAR" />
+    <result column="其他费用(QTFY)" property="其他费用qtfy" jdbcType="NVARCHAR" />
+    <result column="病理诊断费(BLZDF)" property="病理诊断费blzdf" jdbcType="NVARCHAR" />
+    <result column="实验室诊断费(SYSZDF)" property="实验室诊断费syszdf" jdbcType="NVARCHAR" />
+    <result column="影像学诊断费(YXXZDF)" property="影像学诊断费yxxzdf" jdbcType="NVARCHAR" />
+    <result column="临床诊断项目费(LCZDXMF)" property="临床诊断项目费lczdxmf" jdbcType="NVARCHAR" />
+    <result column="非手术治疗项目费(FSSZLXMF)" property="非手术治疗项目费fsszlxmf" jdbcType="NVARCHAR" />
+    <result column="临床物理治疗费(WLZLF)" property="临床物理治疗费wlzlf" jdbcType="NVARCHAR" />
+    <result column="手术治疗费(SSZLF)" property="手术治疗费sszlf" jdbcType="NVARCHAR" />
+    <result column="麻醉费(MAF)" property="麻醉费maf" jdbcType="NVARCHAR" />
+    <result column="手术费(SSF)" property="手术费ssf" jdbcType="NVARCHAR" />
+    <result column="康复费(KFF)" property="康复费kff" jdbcType="NVARCHAR" />
+    <result column="中医治疗费(ZYZLF)" property="中医治疗费zyzlf" jdbcType="NVARCHAR" />
+    <result column="西药费(XYF)" property="西药费xyf" jdbcType="NVARCHAR" />
+    <result column="抗菌药物费(KJYWF)" property="抗菌药物费kjywf" jdbcType="NVARCHAR" />
+    <result column="中成药费(ZCYF)" property="中成药费zcyf" jdbcType="NVARCHAR" />
+    <result column="中草药费(ZCYF1)" property="中草药费zcyf1" jdbcType="NVARCHAR" />
+    <result column="血费(XF)" property="血费xf" jdbcType="NVARCHAR" />
+    <result column="白蛋白类制品费(BDBLZPF)" property="白蛋白类制品费bdblzpf" jdbcType="NVARCHAR" />
+    <result column="球蛋白类制品费(QDBLZPF)" property="球蛋白类制品费qdblzpf" jdbcType="NVARCHAR" />
+    <result column="凝血因子类制品费(NXYZLZPF)" property="凝血因子类制品费nxyzlzpf" jdbcType="NVARCHAR" />
+    <result column="细胞因子类制品费(XBYZLZPF)" property="细胞因子类制品费xbyzlzpf" jdbcType="NVARCHAR" />
+    <result column="检查用一次性医用材料费(HCYYCLF)" property="检查用一次性医用材料费hcyyclf" jdbcType="NVARCHAR" />
+    <result column="治疗用一次性医用材料费(YYCLF)" property="治疗用一次性医用材料费yyclf" jdbcType="NVARCHAR" />
+    <result column="手术用一次性医用材料费(YCXYYCLF)" property="手术用一次性医用材料费ycxyyclf" jdbcType="NVARCHAR" />
+    <result column="其他费(QTF)" property="其他费qtf" jdbcType="NVARCHAR" />
+    <result column="单位负责人(DWFZR)" property="单位负责人dwfzr" jdbcType="NVARCHAR" />
+    <result column="统计负责人(TJFZR)" property="统计负责人tjfzr" jdbcType="NVARCHAR" />
+    <result column="填表人(TBR)" property="填表人tbr" jdbcType="NVARCHAR" />
+    <result column="联系电话(LXDH)" property="联系电话lxdh" jdbcType="NVARCHAR" />
+    <result column="手机(SJ)" property="手机sj" jdbcType="NVARCHAR" />
+    <result column="报出日期(BCRQ)" property="报出日期bcrq" jdbcType="NVARCHAR" />
+    <result column="USERID(USERID)" property="useriduserid" jdbcType="NVARCHAR" />
   </resultMap>
   <select id="getAll"  resultMap="BaseResultMap" >
-    select * from aaa
+    select *  from  aaa    a
+    inner join  bbb b on a.[病案号(BAH)]= b.[病案号(BAH1)]
   </select>
 </mapper>

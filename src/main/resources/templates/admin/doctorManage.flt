@@ -809,7 +809,31 @@
                         <td>${d.一般医疗服务费ylfuf}</td>
                         <td>${d.一般治疗操作费zlczf}</td>
                         <td>${d.护理费hlf}</td>
-
+                        <td>${d.其他费用qtfy}</td>
+                        <td>${d.病理诊断费blzdf}</td>
+                        <td>${d.实验室诊断费syszdf}</td>
+                        <td>${d.影像学诊断费yxxzdf}</td>
+                        <td>${d.临床诊断项目费lczdxmf}</td>
+                        <td>${d.非手术治疗项目费fsszlxmf}</td>
+                        <td>${d.临床物理治疗费wlzlf}</td>
+                        <td>${d.手术治疗费sszlf}</td>
+                        <td>${d.麻醉费maf}</td>
+                        <td>${d.手术费ssf}</td>
+                        <td>${d.康复费kff}</td>
+                        <td>${d.中医治疗费zyzlf}</td>
+                        <td>${d.西药费xyf}</td>
+                        <td>${d.抗菌药物费kjywf}</td>
+                        <td>${d.中成药费zcyf}</td>
+                        <td>${d.中草药费zcyf1}</td>
+                        <td>${d.血费xf}</td>
+                        <td>${d.白蛋白类制品费bdblzpf}</td>
+                        <td>${d.球蛋白类制品费qdblzpf}</td>
+                        <td>${d.凝血因子类制品费nxyzlzpf}</td>
+                        <td>${d.细胞因子类制品费xbyzlzpf}</td>
+                        <td>${d.检查用一次性医用材料费hcyyclf}</td>
+                        <td>${d.治疗用一次性医用材料费yyclf}</td>
+                        <td>${d.手术用一次性医用材料费ycxyyclf}</td>
+                        <td>${d.其他费qtf}</td>
                     </tr>
                 </#list>
                 </tbody>

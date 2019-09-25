@@ -513,6 +513,326 @@ public class Aaa {
 
     private String 其他费用qtfy;
 
+    private String 病案号bah1;
+
+    private String 病理诊断费blzdf;
+
+    private String 实验室诊断费syszdf;
+
+    private String 影像学诊断费yxxzdf;
+
+    private String 临床诊断项目费lczdxmf;
+
+    private String 非手术治疗项目费fsszlxmf;
+
+    private String 临床物理治疗费wlzlf;
+
+    private String 手术治疗费sszlf;
+
+    private String 麻醉费maf;
+
+    private String 手术费ssf;
+
+    private String 康复费kff;
+
+    private String 中医治疗费zyzlf;
+
+    private String 西药费xyf;
+
+    private String 抗菌药物费kjywf;
+
+    private String 中成药费zcyf;
+
+    private String 中草药费zcyf1;
+
+    private String 血费xf;
+
+    private String 白蛋白类制品费bdblzpf;
+
+    private String 球蛋白类制品费qdblzpf;
+
+    private String 凝血因子类制品费nxyzlzpf;
+
+    private String 细胞因子类制品费xbyzlzpf;
+
+    private String 检查用一次性医用材料费hcyyclf;
+
+    private String 治疗用一次性医用材料费yyclf;
+
+    private String 手术用一次性医用材料费ycxyyclf;
+
+    private String 其他费qtf;
+
+    private String 单位负责人dwfzr;
+
+    private String 统计负责人tjfzr;
+
+    private String 填表人tbr;
+
+    private String 联系电话lxdh;
+
+    private String 手机sj;
+
+    private String 报出日期bcrq;
+
+    private String useriduserid;
+
+    public String get病案号bah1() {
+        return 病案号bah1;
+    }
+
+    public void set病案号bah1(String 病案号bah1) {
+        this.病案号bah1 = 病案号bah1;
+    }
+
+    public String get病理诊断费blzdf() {
+        return 病理诊断费blzdf;
+    }
+
+    public void set病理诊断费blzdf(String 病理诊断费blzdf) {
+        this.病理诊断费blzdf = 病理诊断费blzdf;
+    }
+
+    public String get实验室诊断费syszdf() {
+        return 实验室诊断费syszdf;
+    }
+
+    public void set实验室诊断费syszdf(String 实验室诊断费syszdf) {
+        this.实验室诊断费syszdf = 实验室诊断费syszdf;
+    }
+
+    public String get影像学诊断费yxxzdf() {
+        return 影像学诊断费yxxzdf;
+    }
+
+    public void set影像学诊断费yxxzdf(String 影像学诊断费yxxzdf) {
+        this.影像学诊断费yxxzdf = 影像学诊断费yxxzdf;
+    }
+
+    public String get临床诊断项目费lczdxmf() {
+        return 临床诊断项目费lczdxmf;
+    }
+
+    public void set临床诊断项目费lczdxmf(String 临床诊断项目费lczdxmf) {
+        this.临床诊断项目费lczdxmf = 临床诊断项目费lczdxmf;
+    }
+
+    public String get非手术治疗项目费fsszlxmf() {
+        return 非手术治疗项目费fsszlxmf;
+    }
+
+    public void set非手术治疗项目费fsszlxmf(String 非手术治疗项目费fsszlxmf) {
+        this.非手术治疗项目费fsszlxmf = 非手术治疗项目费fsszlxmf;
+    }
+
+    public String get临床物理治疗费wlzlf() {
+        return 临床物理治疗费wlzlf;
+    }
+
+    public void set临床物理治疗费wlzlf(String 临床物理治疗费wlzlf) {
+        this.临床物理治疗费wlzlf = 临床物理治疗费wlzlf;
+    }
+
+    public String get手术治疗费sszlf() {
+        return 手术治疗费sszlf;
+    }
+
+    public void set手术治疗费sszlf(String 手术治疗费sszlf) {
+        this.手术治疗费sszlf = 手术治疗费sszlf;
+    }
+
+    public String get麻醉费maf() {
+        return 麻醉费maf;
+    }
+
+    public void set麻醉费maf(String 麻醉费maf) {
+        this.麻醉费maf = 麻醉费maf;
+    }
+
+    public String get手术费ssf() {
+        return 手术费ssf;
+    }
+
+    public void set手术费ssf(String 手术费ssf) {
+        this.手术费ssf = 手术费ssf;
+    }
+
+    public String get康复费kff() {
+        return 康复费kff;
+    }
+
+    public void set康复费kff(String 康复费kff) {
+        this.康复费kff = 康复费kff;
+    }
+
+    public String get中医治疗费zyzlf() {
+        return 中医治疗费zyzlf;
+    }
+
+    public void set中医治疗费zyzlf(String 中医治疗费zyzlf) {
+        this.中医治疗费zyzlf = 中医治疗费zyzlf;
+    }
+
+    public String get西药费xyf() {
+        return 西药费xyf;
+    }
+
+    public void set西药费xyf(String 西药费xyf) {
+        this.西药费xyf = 西药费xyf;
+    }
+
+    public String get抗菌药物费kjywf() {
+        return 抗菌药物费kjywf;
+    }
+
+    public void set抗菌药物费kjywf(String 抗菌药物费kjywf) {
+        this.抗菌药物费kjywf = 抗菌药物费kjywf;
+    }
+
+    public String get中成药费zcyf() {
+        return 中成药费zcyf;
+    }
+
+    public void set中成药费zcyf(String 中成药费zcyf) {
+        this.中成药费zcyf = 中成药费zcyf;
+    }
+
+    public String get中草药费zcyf1() {
+        return 中草药费zcyf1;
+    }
+
+    public void set中草药费zcyf1(String 中草药费zcyf1) {
+        this.中草药费zcyf1 = 中草药费zcyf1;
+    }
+
+    public String get血费xf() {
+        return 血费xf;
+    }
+
+    public void set血费xf(String 血费xf) {
+        this.血费xf = 血费xf;
+    }
+
+    public String get白蛋白类制品费bdblzpf() {
+        return 白蛋白类制品费bdblzpf;
+    }
+
+    public void set白蛋白类制品费bdblzpf(String 白蛋白类制品费bdblzpf) {
+        this.白蛋白类制品费bdblzpf = 白蛋白类制品费bdblzpf;
+    }
+
+    public String get球蛋白类制品费qdblzpf() {
+        return 球蛋白类制品费qdblzpf;
+    }
+
+    public void set球蛋白类制品费qdblzpf(String 球蛋白类制品费qdblzpf) {
+        this.球蛋白类制品费qdblzpf = 球蛋白类制品费qdblzpf;
+    }
+
+    public String get凝血因子类制品费nxyzlzpf() {
+        return 凝血因子类制品费nxyzlzpf;
+    }
+
+    public void set凝血因子类制品费nxyzlzpf(String 凝血因子类制品费nxyzlzpf) {
+        this.凝血因子类制品费nxyzlzpf = 凝血因子类制品费nxyzlzpf;
+    }
+
+    public String get细胞因子类制品费xbyzlzpf() {
+        return 细胞因子类制品费xbyzlzpf;
+    }
+
+    public void set细胞因子类制品费xbyzlzpf(String 细胞因子类制品费xbyzlzpf) {
+        this.细胞因子类制品费xbyzlzpf = 细胞因子类制品费xbyzlzpf;
+    }
+
+    public String get检查用一次性医用材料费hcyyclf() {
+        return 检查用一次性医用材料费hcyyclf;
+    }
+
+    public void set检查用一次性医用材料费hcyyclf(String 检查用一次性医用材料费hcyyclf) {
+        this.检查用一次性医用材料费hcyyclf = 检查用一次性医用材料费hcyyclf;
+    }
+
+    public String get治疗用一次性医用材料费yyclf() {
+        return 治疗用一次性医用材料费yyclf;
+    }
+
+    public void set治疗用一次性医用材料费yyclf(String 治疗用一次性医用材料费yyclf) {
+        this.治疗用一次性医用材料费yyclf = 治疗用一次性医用材料费yyclf;
+    }
+
+    public String get手术用一次性医用材料费ycxyyclf() {
+        return 手术用一次性医用材料费ycxyyclf;
+    }
+
+    public void set手术用一次性医用材料费ycxyyclf(String 手术用一次性医用材料费ycxyyclf) {
+        this.手术用一次性医用材料费ycxyyclf = 手术用一次性医用材料费ycxyyclf;
+    }
+
+    public String get其他费qtf() {
+        return 其他费qtf;
+    }
+
+    public void set其他费qtf(String 其他费qtf) {
+        this.其他费qtf = 其他费qtf;
+    }
+
+    public String get单位负责人dwfzr() {
+        return 单位负责人dwfzr;
+    }
+
+    public void set单位负责人dwfzr(String 单位负责人dwfzr) {
+        this.单位负责人dwfzr = 单位负责人dwfzr;
+    }
+
+    public String get统计负责人tjfzr() {
+        return 统计负责人tjfzr;
+    }
+
+    public void set统计负责人tjfzr(String 统计负责人tjfzr) {
+        this.统计负责人tjfzr = 统计负责人tjfzr;
+    }
+
+    public String get填表人tbr() {
+        return 填表人tbr;
+    }
+
+    public void set填表人tbr(String 填表人tbr) {
+        this.填表人tbr = 填表人tbr;
+    }
+
+    public String get联系电话lxdh() {
+        return 联系电话lxdh;
+    }
+
+    public void set联系电话lxdh(String 联系电话lxdh) {
+        this.联系电话lxdh = 联系电话lxdh;
+    }
+
+    public String get手机sj() {
+        return 手机sj;
+    }
+
+    public void set手机sj(String 手机sj) {
+        this.手机sj = 手机sj;
+    }
+
+    public String get报出日期bcrq() {
+        return 报出日期bcrq;
+    }
+
+    public void set报出日期bcrq(String 报出日期bcrq) {
+        this.报出日期bcrq = 报出日期bcrq;
+    }
+
+    public String getUseriduserid() {
+        return useriduserid;
+    }
+
+    public void setUseriduserid(String useriduserid) {
+        this.useriduserid = useriduserid;
+    }
+
     public String getYearmonthyearmonth() {
         return yearmonthyearmonth;
     }
@@ -2561,265 +2881,5 @@ public class Aaa {
         this.药物过敏ywgm = 药物过敏ywgm;
     }
 
-    @Override
-    public String toString() {
-        return "Aaa{" +
-                "yearmonthyearmonth='" + yearmonthyearmonth + '\'' +
-                ", 卫计委机构wjwid='" + 卫计委机构wjwid + '\'' +
-                ", 医疗卫生机构yljgid='" + 医疗卫生机构yljgid + '\'' +
-                ", 医疗付款方式ylfkfs='" + 医疗付款方式ylfkfs + '\'' +
-                ", 健康卡号jkkh='" + 健康卡号jkkh + '\'' +
-                ", 住院次数zycs='" + 住院次数zycs + '\'' +
-                ", 病案号bah='" + 病案号bah + '\'' +
-                ", 姓名xm='" + 姓名xm + '\'' +
-                ", 性别xb='" + 性别xb + '\'' +
-                ", 出生日期csrq='" + 出生日期csrq + '\'' +
-                ", 年龄nl='" + 年龄nl + '\'' +
-                ", 国籍gj='" + 国籍gj + '\'' +
-                ", 年龄不足1周岁的年龄月bzyzsnl='" + 年龄不足1周岁的年龄月bzyzsnl + '\'' +
-                ", 不足1周岁的年龄日bzyzsnlr='" + 不足1周岁的年龄日bzyzsnlr + '\'' +
-                ", 新生儿出生体重克xsecstz='" + 新生儿出生体重克xsecstz + '\'' +
-                ", 新生儿入院体重克xserytz='" + 新生儿入院体重克xserytz + '\'' +
-                ", 出生地csd='" + 出生地csd + '\'' +
-                ", 籍贯gg='" + 籍贯gg + '\'' +
-                ", 民族mz='" + 民族mz + '\'' +
-                ", 身份证号sfzh='" + 身份证号sfzh + '\'' +
-                ", 职业zy='" + 职业zy + '\'' +
-                ", 婚姻hy='" + 婚姻hy + '\'' +
-                ", 现住址xzzXzqh='" + 现住址xzzXzqh + '\'' +
-                ", 现住址xzz='" + 现住址xzz + '\'' +
-                ", 电话dh='" + 电话dh + '\'' +
-                ", 邮编yb1='" + 邮编yb1 + '\'' +
-                ", 户口地址住院次数出生日期新生儿入院体重克职业hkdzXzqh='" + 户口地址住院次数出生日期新生儿入院体重克职业hkdzXzqh + '\'' +
-                ", 户口地址hkdz='" + 户口地址hkdz + '\'' +
-                ", 邮编yb2='" + 邮编yb2 + '\'' +
-                ", 工作单位及地址dwdzXzqh='" + 工作单位及地址dwdzXzqh + '\'' +
-                ", 工作单位及地址gzdwjdz='" + 工作单位及地址gzdwjdz + '\'' +
-                ", 单位电话dwdh='" + 单位电话dwdh + '\'' +
-                ", 邮编yb3='" + 邮编yb3 + '\'' +
-                ", 联系人姓名lxrxm='" + 联系人姓名lxrxm + '\'' +
-                ", 关系gx='" + 关系gx + '\'' +
-                ", 地址dzXzqh='" + 地址dzXzqh + '\'' +
-                ", 地址dz='" + 地址dz + '\'' +
-                ", 电话dh2='" + 电话dh2 + '\'' +
-                ", 入院途径rytj='" + 入院途径rytj + '\'' +
-                ", 其他医疗机构转入名称qtjgzr='" + 其他医疗机构转入名称qtjgzr + '\'' +
-                ", 入院时间rysj='" + 入院时间rysj + '\'' +
-                ", 时rysjs='" + 时rysjs + '\'' +
-                ", 分rysjf='" + 分rysjf + '\'' +
-                ", 入院科别rykb='" + 入院科别rykb + '\'' +
-                ", 入院病房rybf='" + 入院病房rybf + '\'' +
-                ", 转科科别zkkb='" + 转科科别zkkb + '\'' +
-                ", 出院时间cysj='" + 出院时间cysj + '\'' +
-                ", 时cysjs='" + 时cysjs + '\'' +
-                ", 分cysjf='" + 分cysjf + '\'' +
-                ", 出院科别cykb='" + 出院科别cykb + '\'' +
-                ", 出院病房cybf='" + 出院病房cybf + '\'' +
-                ", 实际住院天sjzyts='" + 实际住院天sjzyts + '\'' +
-                ", 门急诊诊断mzzd='" + 门急诊诊断mzzd + '\'' +
-                ", 疾病编码jbbm='" + 疾病编码jbbm + '\'' +
-                ", 入院诊断ryzd='" + 入院诊断ryzd + '\'' +
-                ", 疾病编码jbbm1='" + 疾病编码jbbm1 + '\'' +
-                ", 住院期间是否告病危或病重bwhbz='" + 住院期间是否告病危或病重bwhbz + '\'' +
-                ", 出院诊断zyzd='" + 出院诊断zyzd + '\'' +
-                ", 疾病编码jbdm='" + 疾病编码jbdm + '\'' +
-                ", 入院病情rybq='" + 入院病情rybq + '\'' +
-                ", 出院诊断8qtzd8='" + 出院诊断8qtzd8 + '\'' +
-                ", 疾病编码8jbdm8='" + 疾病编码8jbdm8 + '\'' +
-                ", 入院病情8rybq8='" + 入院病情8rybq8 + '\'' +
-                ", 出院诊断1qtzd1='" + 出院诊断1qtzd1 + '\'' +
-                ", 疾病编码1jbdm1='" + 疾病编码1jbdm1 + '\'' +
-                ", 入院病情1rybq1='" + 入院病情1rybq1 + '\'' +
-                ", 出院诊断9qtzd9='" + 出院诊断9qtzd9 + '\'' +
-                ", 疾病编码9jbdm9='" + 疾病编码9jbdm9 + '\'' +
-                ", 入院病情9rybq9='" + 入院病情9rybq9 + '\'' +
-                ", 出院诊断2qtzd2='" + 出院诊断2qtzd2 + '\'' +
-                ", 疾病编码2jbdm2='" + 疾病编码2jbdm2 + '\'' +
-                ", 入院病情2rybq2='" + 入院病情2rybq2 + '\'' +
-                ", 出院诊断10qtzd10='" + 出院诊断10qtzd10 + '\'' +
-                ", 疾病编码10jbdm10='" + 疾病编码10jbdm10 + '\'' +
-                ", 入院病情10rybq10='" + 入院病情10rybq10 + '\'' +
-                ", 出院诊断3qtzd3='" + 出院诊断3qtzd3 + '\'' +
-                ", 疾病编码3jbdm3='" + 疾病编码3jbdm3 + '\'' +
-                ", 入院病情3rybq3='" + 入院病情3rybq3 + '\'' +
-                ", 出院诊断11qtzd11='" + 出院诊断11qtzd11 + '\'' +
-                ", 疾病编码11jbdm11='" + 疾病编码11jbdm11 + '\'' +
-                ", 入院病情11rybq11='" + 入院病情11rybq11 + '\'' +
-                ", 出院诊断4qtzd4='" + 出院诊断4qtzd4 + '\'' +
-                ", 疾病编码4jbdm4='" + 疾病编码4jbdm4 + '\'' +
-                ", 入院病情4rybq4='" + 入院病情4rybq4 + '\'' +
-                ", 出院诊断12qtzd12='" + 出院诊断12qtzd12 + '\'' +
-                ", 疾病编码12jbdm12='" + 疾病编码12jbdm12 + '\'' +
-                ", 入院病情12rybq12='" + 入院病情12rybq12 + '\'' +
-                ", 出院诊断5qtzd5='" + 出院诊断5qtzd5 + '\'' +
-                ", 疾病编码5jbdm5='" + 疾病编码5jbdm5 + '\'' +
-                ", 入院病情5rybq5='" + 入院病情5rybq5 + '\'' +
-                ", 出院诊断13qtzd13='" + 出院诊断13qtzd13 + '\'' +
-                ", 疾病编码13jbdm13='" + 疾病编码13jbdm13 + '\'' +
-                ", 入院病情13rybq13='" + 入院病情13rybq13 + '\'' +
-                ", 出院诊断6qtzd6='" + 出院诊断6qtzd6 + '\'' +
-                ", 疾病编码6jbdm6='" + 疾病编码6jbdm6 + '\'' +
-                ", 入院病情6rybq6='" + 入院病情6rybq6 + '\'' +
-                ", 出院诊断14qtzd14='" + 出院诊断14qtzd14 + '\'' +
-                ", 疾病编码14jbdm14='" + 疾病编码14jbdm14 + '\'' +
-                ", 入院病情14rybq14='" + 入院病情14rybq14 + '\'' +
-                ", 出院诊断7qtzd7='" + 出院诊断7qtzd7 + '\'' +
-                ", 疾病编码7jbdm7='" + 疾病编码7jbdm7 + '\'' +
-                ", 入院病情7rybq7='" + 入院病情7rybq7 + '\'' +
-                ", 出院诊断15qtzd15='" + 出院诊断15qtzd15 + '\'' +
-                ", 疾病编码15jbdm15='" + 疾病编码15jbdm15 + '\'' +
-                ", 入院病情15rybq15='" + 入院病情15rybq15 + '\'' +
-                ", 损伤毒的外部原因wbyy='" + 损伤毒的外部原因wbyy + '\'' +
-                ", 疾病编码h23='" + 疾病编码h23 + '\'' +
-                ", 病理诊断blzd='" + 病理诊断blzd + '\'' +
-                ", 疾病编码jbmm='" + 疾病编码jbmm + '\'' +
-                ", 病理号blh='" + 病理号blh + '\'' +
-                ", 药物过敏ywgm='" + 药物过敏ywgm + '\'' +
-                ", 过敏药物出院情况gmyw='" + 过敏药物出院情况gmyw + '\'' +
-                ", 死亡患者尸检swhzsj='" + 死亡患者尸检swhzsj + '\'' +
-                ", 血型xx='" + 血型xx + '\'' +
-                ", rhrh='" + rhrh + '\'' +
-                ", 红细胞hxb='" + 红细胞hxb + '\'' +
-                ", 血小板xxb='" + 血小板xxb + '\'' +
-                ", 血浆xj='" + 血浆xj + '\'' +
-                ", 全血qx='" + 全血qx + '\'' +
-                ", 自体血回输ztxhs='" + 自体血回输ztxhs + '\'' +
-                ", 白蛋白bdb='" + 白蛋白bdb + '\'' +
-                ", 冷沉淀lcd='" + 冷沉淀lcd + '\'' +
-                ", 其他qt='" + 其他qt + '\'' +
-                ", 输血反应sxfy='" + 输血反应sxfy + '\'' +
-                ", 随诊sz='" + 随诊sz + '\'' +
-                ", 随诊期限szqxz='" + 随诊期限szqxz + '\'' +
-                ", 周szqxy='" + 周szqxy + '\'' +
-                ", 月szqxn='" + 月szqxn + '\'' +
-                ", 科主任出院情况kzr='" + 科主任出院情况kzr + '\'' +
-                ", 主任副主任医师zrys='" + 主任副主任医师zrys + '\'' +
-                ", 主诊医师zznys='" + 主诊医师zznys + '\'' +
-                ", 主治医师zzys='" + 主治医师zzys + '\'' +
-                ", 住院医师zyys='" + 住院医师zyys + '\'' +
-                ", 责任护士出院情况zrhs='" + 责任护士出院情况zrhs + '\'' +
-                ", 进修医师jxys='" + 进修医师jxys + '\'' +
-                ", 实习医师sxys='" + 实习医师sxys + '\'' +
-                ", 编码员bmy='" + 编码员bmy + '\'' +
-                ", 病案质量出院情况bazl='" + 病案质量出院情况bazl + '\'' +
-                ", 质控医师zkys='" + 质控医师zkys + '\'' +
-                ", 质控护士zkhs='" + 质控护士zkhs + '\'' +
-                ", 质控日期zkrq='" + 质控日期zkrq + '\'' +
-                ", 是否急诊手术sf1='" + 是否急诊手术sf1 + '\'' +
-                ", 手术及操作编码手术1ssjczbm1='" + 手术及操作编码手术1ssjczbm1 + '\'' +
-                ", 手术及操作日期1ssjczrq1='" + 手术及操作日期1ssjczrq1 + '\'' +
-                ", 手术级别1ssjb1='" + 手术级别1ssjb1 + '\'' +
-                ", 手术及操作名称1ssjczmc1='" + 手术及操作名称1ssjczmc1 + '\'' +
-                ", 术者1sz1='" + 术者1sz1 + '\'' +
-                ", i助手1yz1='" + i助手1yz1 + '\'' +
-                ", ii助手1ez1='" + ii助手1ez1 + '\'' +
-                ", 切口级别1qkdj1='" + 切口级别1qkdj1 + '\'' +
-                ", 切口愈合等次1qkyhlb1='" + 切口愈合等次1qkyhlb1 + '\'' +
-                ", 麻醉方式1mzfs1='" + 麻醉方式1mzfs1 + '\'' +
-                ", 麻醉医师1mzys1='" + 麻醉医师1mzys1 + '\'' +
-                ", 是否急诊手术sf2='" + 是否急诊手术sf2 + '\'' +
-                ", 手术及操作编码手术2ssjczbm2='" + 手术及操作编码手术2ssjczbm2 + '\'' +
-                ", 手术及操作日期2ssjczrq2='" + 手术及操作日期2ssjczrq2 + '\'' +
-                ", 手术级别2ssjb2='" + 手术级别2ssjb2 + '\'' +
-                ", 手术及操作名称2ssjczmc2='" + 手术及操作名称2ssjczmc2 + '\'' +
-                ", 术者2sz2='" + 术者2sz2 + '\'' +
-                ", i助手2yz2='" + i助手2yz2 + '\'' +
-                ", ii助手2ez2='" + ii助手2ez2 + '\'' +
-                ", 切口级别2qkdj2='" + 切口级别2qkdj2 + '\'' +
-                ", 切口愈合等次2qkyhlb2='" + 切口愈合等次2qkyhlb2 + '\'' +
-                ", 麻醉方式2mzfs2='" + 麻醉方式2mzfs2 + '\'' +
-                ", 麻醉医师2mzys2='" + 麻醉医师2mzys2 + '\'' +
-                ", 是否急诊手术sf3='" + 是否急诊手术sf3 + '\'' +
-                ", 手术及操作编码手术3ssjczbm3='" + 手术及操作编码手术3ssjczbm3 + '\'' +
-                ", 手术及操作日期3ssjczrq3='" + 手术及操作日期3ssjczrq3 + '\'' +
-                ", 手术级别3ssjb3='" + 手术级别3ssjb3 + '\'' +
-                ", 手术及操作名称3ssjczmc3='" + 手术及操作名称3ssjczmc3 + '\'' +
-                ", 术者3sz3='" + 术者3sz3 + '\'' +
-                ", i助手3yz3='" + i助手3yz3 + '\'' +
-                ", ii助手3ez3='" + ii助手3ez3 + '\'' +
-                ", 切口级别3qkdj3='" + 切口级别3qkdj3 + '\'' +
-                ", 切口愈合等次3qkyhlb3='" + 切口愈合等次3qkyhlb3 + '\'' +
-                ", 麻醉方式3mzfs3='" + 麻醉方式3mzfs3 + '\'' +
-                ", 麻醉医师3mzys3='" + 麻醉医师3mzys3 + '\'' +
-                ", 是否急诊手术sf4='" + 是否急诊手术sf4 + '\'' +
-                ", 手术及操作编码手术4ssjczbm4='" + 手术及操作编码手术4ssjczbm4 + '\'' +
-                ", 手术及操作日期4ssjczrq4='" + 手术及操作日期4ssjczrq4 + '\'' +
-                ", 手术级别4ssjb4='" + 手术级别4ssjb4 + '\'' +
-                ", 手术及操作名称4ssjczmc4='" + 手术及操作名称4ssjczmc4 + '\'' +
-                ", 术者4sz4='" + 术者4sz4 + '\'' +
-                ", i助手4yz4='" + i助手4yz4 + '\'' +
-                ", ii助手4ez4='" + ii助手4ez4 + '\'' +
-                ", 切口级别4qkdj4='" + 切口级别4qkdj4 + '\'' +
-                ", 切口愈合等次4qkyhlb4='" + 切口愈合等次4qkyhlb4 + '\'' +
-                ", 麻醉方式4mzfs4='" + 麻醉方式4mzfs4 + '\'' +
-                ", 麻醉医师4mzys4='" + 麻醉医师4mzys4 + '\'' +
-                ", 是否急诊手术sf5='" + 是否急诊手术sf5 + '\'' +
-                ", 手术及操作编码手术5ssjczbm5='" + 手术及操作编码手术5ssjczbm5 + '\'' +
-                ", 手术及操作日期5ssjczrq5='" + 手术及操作日期5ssjczrq5 + '\'' +
-                ", 手术级别5ssjb5='" + 手术级别5ssjb5 + '\'' +
-                ", 手术及操作名称5ssjczmc5='" + 手术及操作名称5ssjczmc5 + '\'' +
-                ", 术者5sz5='" + 术者5sz5 + '\'' +
-                ", i助手5yz5='" + i助手5yz5 + '\'' +
-                ", ii助手5ez5='" + ii助手5ez5 + '\'' +
-                ", 切口级别5qkdj5='" + 切口级别5qkdj5 + '\'' +
-                ", 切口愈合等次5qkyhlb5='" + 切口愈合等次5qkyhlb5 + '\'' +
-                ", 麻醉方式5mzfs5='" + 麻醉方式5mzfs5 + '\'' +
-                ", 麻醉医师5mzys5='" + 麻醉医师5mzys5 + '\'' +
-                ", 是否急诊手术sf6='" + 是否急诊手术sf6 + '\'' +
-                ", 手术及操作编码手术6ssjczbm6='" + 手术及操作编码手术6ssjczbm6 + '\'' +
-                ", 手术及操作日期6ssjczrq6='" + 手术及操作日期6ssjczrq6 + '\'' +
-                ", 手术级别6ssjb6='" + 手术级别6ssjb6 + '\'' +
-                ", 手术及操作名称6ssjczmc6='" + 手术及操作名称6ssjczmc6 + '\'' +
-                ", 术者6sz6='" + 术者6sz6 + '\'' +
-                ", i助手6yz6='" + i助手6yz6 + '\'' +
-                ", ii助手6ez6='" + ii助手6ez6 + '\'' +
-                ", 切口级别6qkdj6='" + 切口级别6qkdj6 + '\'' +
-                ", 切口愈合等次6qkyhlb6='" + 切口愈合等次6qkyhlb6 + '\'' +
-                ", 麻醉方式6mzfs6='" + 麻醉方式6mzfs6 + '\'' +
-                ", 麻醉医师6mzys6='" + 麻醉医师6mzys6 + '\'' +
-                ", 是否急诊手术sf7='" + 是否急诊手术sf7 + '\'' +
-                ", 手术及操作编码手术7ssjczbm7='" + 手术及操作编码手术7ssjczbm7 + '\'' +
-                ", 手术及操作日期7ssjczrq7='" + 手术及操作日期7ssjczrq7 + '\'' +
-                ", 手术级别7ssjb7='" + 手术级别7ssjb7 + '\'' +
-                ", 手术及操作名称7ssjczmc7='" + 手术及操作名称7ssjczmc7 + '\'' +
-                ", 术者7sz7='" + 术者7sz7 + '\'' +
-                ", i助手7yz7='" + i助手7yz7 + '\'' +
-                ", ii助手7ez7='" + ii助手7ez7 + '\'' +
-                ", 切口级别7qkdj7='" + 切口级别7qkdj7 + '\'' +
-                ", 切口愈合等次7qkyhlb7='" + 切口愈合等次7qkyhlb7 + '\'' +
-                ", 麻醉方式7mzfs7='" + 麻醉方式7mzfs7 + '\'' +
-                ", 麻醉医师7mzys7='" + 麻醉医师7mzys7 + '\'' +
-                ", 是否实施临床路径管理lcljgl='" + 是否实施临床路径管理lcljgl + '\'' +
-                ", 是否完成临床路径wclclj='" + 是否完成临床路径wclclj + '\'' +
-                ", 退出原因tcyy='" + 退出原因tcyy + '\'' +
-                ", 是否变异sfby='" + 是否变异sfby + '\'' +
-                ", 变异原因byyy='" + 变异原因byyy + '\'' +
-                ", 离院方式lyfs='" + 离院方式lyfs + '\'' +
-                ", 医嘱转院拟接收医疗机构名称yzzyYljg='" + 医嘱转院拟接收医疗机构名称yzzyYljg + '\'' +
-                ", 医嘱转社区卫生服务机构乡镇卫生院拟接收医疗机构名称wsyYljg='" + 医嘱转社区卫生服务机构乡镇卫生院拟接收医疗机构名称wsyYljg + '\'' +
-                ", ctct='" + ctct + '\'' +
-                ", petctpetct='" + petctpetct + '\'' +
-                ", 双源ctsyct='" + 双源ctsyct + '\'' +
-                ", b超bc='" + b超bc + '\'' +
-                ", x片xp='" + x片xp + '\'' +
-                ", 超生心电图csxdt='" + 超生心电图csxdt + '\'' +
-                ", mrimri='" + mrimri + '\'' +
-                ", 同位素检查twsjc='" + 同位素检查twsjc + '\'' +
-                ", 是否有出院31天内再住院计划sfzzyjh='" + 是否有出院31天内再住院计划sfzzyjh + '\'' +
-                ", 目的md='" + 目的md + '\'' +
-                ", 颅脑损伤患者昏迷入院前时间入院前ryqT='" + 颅脑损伤患者昏迷入院前时间入院前ryqT + '\'' +
-                ", 小时ryqXs='" + 小时ryqXs + '\'' +
-                ", 分钟ryqF='" + 分钟ryqF + '\'' +
-                ", 颅脑损伤患者昏迷入院后时间入院后ryhT='" + 颅脑损伤患者昏迷入院后时间入院后ryhT + '\'' +
-                ", 小时1ryhXs='" + 小时1ryhXs + '\'' +
-                ", 分钟1ryhF='" + 分钟1ryhF + '\'' +
-                ", 总费用zfy='" + 总费用zfy + '\'' +
-                ", 自付金额zfje='" + 自付金额zfje + '\'' +
-                ", 其他支付qtzf='" + 其他支付qtzf + '\'' +
-                ", 一般医疗服务费ylfuf='" + 一般医疗服务费ylfuf + '\'' +
-                ", 一般治疗操作费zlczf='" + 一般治疗操作费zlczf + '\'' +
-                ", 护理费hlf='" + 护理费hlf + '\'' +
-                ", 其他费用qtfy='" + 其他费用qtfy + '\'' +
-                '}';
-    }
+
 }
