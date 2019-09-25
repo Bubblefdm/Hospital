@@ -30,11 +30,11 @@
             <form action="/admin/doctorManage" method="get">
             <table>
                 <tr>
-                    <td>姓名:</td>
+                  <!--   <td>姓名:</td>
                     <td><input name="name" autocomplete="off" value="${name!''}" class="layui-input lay-size=sm" ></td>
                     <td>&nbsp;&nbsp;身份证:</td>
                     <td><input name="certId" autocomplete="off" value="${certId!''}" class="layui-input lay-size=sm" ></td>
-                    <td><button class="layui-btn" type="submit"><i class="layui-icon">&#xe615;</i></button></td>
+                    <td><button class="layui-btn" type="submit"><i class="layui-icon">&#xe615;</i></button></td> -->
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;
                     <button class="layui-btn" type="submit"  onclick="exportTable()" ><i class="layui-icon">导出xls表格</i></button></td>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;
