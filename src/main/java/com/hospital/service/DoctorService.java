@@ -1,13 +1,12 @@
 package com.hospital.service;
 
-import com.hospital.entity.Aaa;
 import com.hospital.entity.Doctor;
 
 import java.util.List;
 import java.util.Map;
 
 public interface DoctorService {
-    List<Aaa> getAllDoctor();
+    List<Doctor> getAllDoctor();
     List<Doctor> getAllDoctor(String name,String certId);
     String delDoctor(Integer id);
     String addDoctor(Doctor doctor);
