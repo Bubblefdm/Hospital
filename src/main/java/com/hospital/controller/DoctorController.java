@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -38,7 +39,10 @@ public class DoctorController {
     public String doctorManage(HttpServletRequest request,@RequestParam(value="name",required = false) String name,@RequestParam(value="certId",required = false) String certId){
         request.setAttribute("name",name);
         request.setAttribute("certId",certId);
-        request.setAttribute("doctors",doctorService.getAllDoctor(name,certId));
+//        request.setAttribute("doctors",doctorService.getAllDoctor(name,certId));
+        request.setAttribute("allDoctor",doctorService.getAllDoctor());
+       // List<Aaa> allDoctor = doctorService.getAllDoctor();
+      //  System.out.println("打印："+allDoctor.toString());
         return "admin/doctorManage";
     }
     @RequestMapping(value = "/admin/doctor/{id}",method = RequestMethod.DELETE)

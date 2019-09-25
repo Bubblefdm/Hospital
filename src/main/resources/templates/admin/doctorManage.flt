@@ -24,19 +24,23 @@
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
     <#include "../menu.flt"/>
-    <div class="layui-body">
+    <div class="layui-body" style = "left: 0px;">
         <!-- 内容主体区域 -->
         <div style="padding: 15px;">
             <form action="/admin/doctorManage" method="get">
             <table>
                 <tr>
-                    <td>昵称:</td>
+                    <td>姓名:</td>
                     <td><input name="name" autocomplete="off" value="${name!''}" class="layui-input lay-size=sm" ></td>
-                    <td>&nbsp;&nbsp;证件号:</td>
+                    <td>&nbsp;&nbsp;身份证:</td>
                     <td><input name="certId" autocomplete="off" value="${certId!''}" class="layui-input lay-size=sm" ></td>
                     <td><button class="layui-btn" type="submit"><i class="layui-icon">&#xe615;</i></button></td>
-                    <td><button class="layui-btn" type="submit"  onclick="exportTable()" ><i>导出表格</i></button></td>
-                    <td><button class="layui-btn" onclick="showAdd('/admin/doctorAdd')"><i class="layui-icon">&#xe608;</i> 添加</button><td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="layui-btn" type="submit"  onclick="exportTable()" ><i class="layui-icon">导出xls表格</i></button></td>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button class="layui-btn" type="submit"   ><i class="layui-icon">导出vcs表格</i></button></td>
+
+                  <!--  <td><button class="layui-btn" onclick="showAdd('/admin/doctorAdd')"><i class="layui-icon">&#xe608;</i> 添加</button><td> -->
 
                 </tr>
             </table>
@@ -46,7 +50,7 @@
 
             <table class="layui-table" id="LAY-EXPORT-TEST" border >
                 <thead>
-                                   <tr>
+ <tr>
                                        <th>A01</th>
                                        <th>A02</th>
                                        <th>A48</th>
@@ -105,7 +109,6 @@
                                        <th>C06x05C</th>
                                        <th>C07x05N</th>
                                        <th>C08x05C</th>
-
                                        <th>C06x06C</th>
                                        <th>C07x06N</th>
                                        <th>C08x06C</th>
@@ -208,18 +211,595 @@
 
 
                                    </tr>
-                               </thead>
+                </thead>
                 <tbody>
-                <#list doctors as d>
+                <#list allDoctor as d>
                     <tr>
-                        <td>${d_index+1}</td>
-                        <td>${d.name}</td>
-                        <td>${d.expert}</td>
-                        <td>${d.age}</td>
-                        <td>${d.sex}</td>
-                        <td>${d.certId}</td>
-                        <td>${d.department}</td>
-                        <td>${d.address}</td>
+                        <td>${d.医疗卫生机构yljgid}</td>
+                        <td>广元市第二人民医院</td>
+                        <td>${d.病案号bah}</td>
+                        <td>${d.住院次数zycs}</td>
+                        <td>${d.入院时间rysj}</td>
+                        <td>${d.出院时间cysj}</td>
+                        <td>${d.健康卡号jkkh}</td>
+                        <td>${d.医疗付款方式ylfkfs}</td>
+                        <td>${d.姓名xm}</td>
+                        <td>${d.性别xb}</td>
+                        <td>${d.出生日期csrq}</td>
+                        <td>${d.年龄nl}</td>
+                        <td>${d.国籍gj}</td>
+                        <td>${d.婚姻hy}</td>
+                        <td>${d.职业zy}</td>
+                        <td>${d.民族mz}</td>
+                        <td>${d.身份证号sfzh}</td>
+                        <td>${d.出生地csd}</td>
+                        <td>${d.籍贯gg}</td>
+                        <td>${d.户口地址hkdz}</td>
+                        <td>${d.邮编yb2}</td>
+                        <td>${d.现住址xzzXzqh}</td>
+                        <td>${d.电话dh}</td>
+                        <td>${d.邮编yb1}</td>
+                        <td>${d.工作单位及地址dwdzXzqh}</td>
+                        <td>${d.单位电话dwdh}</td>
+                        <td>${d.邮编yb3}</td>
+                        <td>${d.联系人姓名lxrxm}</td>
+                        <td>${d.关系gx}</td>
+                        <td>${d.地址dzXzqh}</td>
+                        <td>${d.电话dh2}</td>
+                        <td>${d.入院途径rytj}</td>
+                        <td>${d.入院科别rykb}</td>
+                        <td>${d.入院病房rybf}</td>
+                        <td>${d.转科科别zkkb}</td>
+                        <td>${d.出院科别cykb}</td>
+                        <td>${d.出院病房cybf}</td>
+                        <td>${d.实际住院天sjzyts}</td>
+                        <td>${d.疾病编码jbbm}</td>
+                        <td>${d.门急诊诊断mzzd}</td>
+                        <td>${d.疾病编码jbdm}</td>
+                        <td>${d.出院诊断zyzd}</td>
+                        <td>${d.入院病情rybq}</td>
+
+                        <td>${d.疾病编码1jbdm1}</td>
+                        <td>${d.出院诊断1qtzd1}</td>
+                        <td>${d.入院病情1rybq1}</td>
+
+                        <td>${d.疾病编码2jbdm2}</td>
+                        <td>${d.出院诊断2qtzd2}</td>
+                        <td>${d.入院病情2rybq2}</td>
+
+                        <td>${d.疾病编码3jbdm3}</td>
+                        <td>${d.出院诊断3qtzd3}</td>
+                        <td>${d.入院病情3rybq3}</td>
+
+                        <td>${d.疾病编码4jbdm4}</td>
+                        <td>${d.出院诊断4qtzd4}</td>
+                        <td>${d.入院病情4rybq4}</td>
+
+                        <td>${d.疾病编码5jbdm5}</td>
+                        <td>${d.出院诊断5qtzd5}</td>
+                        <td>${d.入院病情5rybq5}</td>
+
+                        <td>${d.疾病编码6jbdm6}</td>
+                        <td>${d.出院诊断6qtzd6}</td>
+                        <td>${d.入院病情6rybq6}</td>
+
+                        <td>${d.疾病编码7jbdm7}</td>
+                        <td>${d.出院诊断7qtzd7}</td>
+                        <td>${d.入院病情7rybq7}</td>
+
+                        <td>${d.疾病编码8jbdm8}</td>
+                        <td>${d.出院诊断8qtzd8}</td>
+                        <td>${d.入院病情8rybq8}</td>
+
+                        <td>${d.疾病编码9jbdm9}</td>
+                        <td>${d.出院诊断9qtzd9}</td>
+                        <td>${d.入院病情9rybq9}</td>
+
+                        <td>${d.疾病编码10jbdm10}</td>
+                        <td>${d.出院诊断10qtzd10}</td>
+                        <td>${d.入院病情10rybq10}</td>
+
+                        <td>${d.疾病编码11jbdm11}</td>
+                        <td>${d.出院诊断11qtzd11}</td>
+                        <td>${d.入院病情11rybq11}</td>
+
+                        <td>${d.疾病编码12jbdm12}</td>
+                        <td>${d.出院诊断12qtzd12}</td>
+                        <td>${d.入院病情12rybq12}</td>
+
+                        <td>${d.疾病编码13jbdm13}</td>
+                        <td>${d.出院诊断13qtzd13}</td>
+                        <td>${d.入院病情13rybq13}</td>
+
+                        <td>${d.疾病编码14jbdm14}</td>
+                        <td>${d.出院诊断14qtzd14}</td>
+                        <td>${d.入院病情14rybq14}</td>
+
+                        <td>${d.疾病编码15jbdm15}</td>
+                        <td>${d.出院诊断15qtzd15}</td>
+                        <td>${d.入院病情15rybq15}</td>
+
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td> <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>${d.疾病编码jbmm}</td>
+                        <td>${d.病理诊断blzd}</td>
+                        <td>${d.病理号blh}</td>
+                        <td>${d.疾病编码h23}</td>
+                        <td>${d.损伤毒的外部原因wbyy}</td>
+                        <td>${d.药物过敏ywgm}</td>
+                        <td>${d.过敏药物出院情况gmyw}</td>
+                        <td>${d.科主任出院情况kzr}</td>
+                        <td>${d.主任副主任医师zrys}</td>
+                        <td>${d.主治医师zzys}</td>
+                        <td>${d.住院医师zyys}</td>
+                        <td>${d.责任护士出院情况zrhs}</td>
+                        <td>${d.进修医师jxys}</td>
+                        <td>${d.实习医师sxys}</td>
+                        <td>${d.编码员bmy}</td>
+                        <td>${d.病案质量出院情况bazl}</td>
+                        <td>${d.质控医师zkys}</td>
+                        <td>${d.质控护士zkhs}</td>
+                        <td>${d.质控日期zkrq}</td>
+                        <td>${d.死亡患者尸检swhzsj}</td>
+                        <td>${d.血型xx}</td>
+                        <td>${d.rhrh}</td>
+
+                        <td>${d.手术及操作编码手术1ssjczbm1}</td>
+                        <td>${d.手术及操作名称1ssjczmc1}</td>
+                        <td>${d.手术及操作日期1ssjczrq1}</td>
+                        <td>${d.手术级别1ssjb1}</td>
+                        <td>${d.术者1sz1}</td>
+                        <td>${d.i助手1yz1}</td>
+                        <td>${d.ii助手1ez1}</td>
+                        <td>${d.切口愈合等次1qkyhlb1}</td>
+                        <td>${d.麻醉方式1mzfs1}</td>
+                        <td>${d.麻醉医师1mzys1}</td>
+
+                        <td>${d.手术及操作编码手术2ssjczbm2}</td>
+                        <td>${d.手术及操作名称2ssjczmc2}</td>
+                        <td>${d.手术及操作日期2ssjczrq2}</td>
+                        <td>${d.手术级别2ssjb2}</td>
+                        <td>${d.术者2sz2}</td>
+                        <td>${d.i助手2yz2}</td>
+                        <td>${d.ii助手2ez2}</td>
+                        <td>${d.切口愈合等次2qkyhlb2}</td>
+                        <td>${d.麻醉方式2mzfs2}</td>
+                        <td>${d.麻醉医师2mzys2}</td>
+
+                        <td>${d.手术及操作编码手术3ssjczbm3}</td>
+                        <td>${d.手术及操作名称3ssjczmc3}</td>
+                        <td>${d.手术及操作日期3ssjczrq3}</td>
+                        <td>${d.手术级别3ssjb3}</td>
+                        <td>${d.术者3sz3}</td>
+                        <td>${d.i助手3yz3}</td>
+                        <td>${d.ii助手3ez3}</td>
+                        <td>${d.切口愈合等次3qkyhlb3}</td>
+                        <td>${d.麻醉方式3mzfs3}</td>
+                        <td>${d.麻醉医师3mzys3}</td>
+
+                        <td>${d.手术及操作编码手术4ssjczbm4}</td>
+                        <td>${d.手术及操作名称4ssjczmc4}</td>
+                        <td>${d.手术及操作日期4ssjczrq4}</td>
+                        <td>${d.手术级别4ssjb4}</td>
+                        <td>${d.术者4sz4}</td>
+                        <td>${d.i助手4yz4}</td>
+                        <td>${d.ii助手4ez4}</td>
+                        <td>${d.切口愈合等次4qkyhlb4}</td>
+                        <td>${d.麻醉方式4mzfs4}</td>
+                        <td>${d.麻醉医师4mzys4}</td>
+
+                        <td>${d.手术及操作编码手术5ssjczbm5}</td>
+                        <td>${d.手术及操作名称5ssjczmc5}</td>
+                        <td>${d.手术及操作日期5ssjczrq5}</td>
+                        <td>${d.手术级别5ssjb5}</td>
+                        <td>${d.术者5sz5}</td>
+                        <td>${d.i助手5yz5}</td>
+                        <td>${d.ii助手5ez5}</td>
+                        <td>${d.切口愈合等次5qkyhlb5}</td>
+                        <td>${d.麻醉方式5mzfs5}</td>
+                        <td>${d.麻醉医师5mzys5}</td>
+
+                        <td>${d.手术及操作编码手术6ssjczbm6}</td>
+                        <td>${d.手术及操作名称6ssjczmc6}</td>
+                        <td>${d.手术及操作日期6ssjczrq6}</td>
+                        <td>${d.手术级别6ssjb6}</td>
+                        <td>${d.术者6sz6}</td>
+                        <td>${d.i助手6yz6}</td>
+                        <td>${d.ii助手6ez6}</td>
+                        <td>${d.切口愈合等次6qkyhlb6}</td>
+                        <td>${d.麻醉方式6mzfs6}</td>
+                        <td>${d.麻醉医师6mzys6}</td>
+
+                        <td>${d.手术及操作编码手术7ssjczbm7}</td>
+                        <td>${d.手术及操作名称7ssjczmc7}</td>
+                        <td>${d.手术及操作日期7ssjczrq7}</td>
+                        <td>${d.手术级别7ssjb7}</td>
+                        <td>${d.术者7sz7}</td>
+                        <td>${d.i助手7yz7}</td>
+                        <td>${d.ii助手7ez7}</td>
+                        <td>${d.切口愈合等次7qkyhlb7}</td>
+                        <td>${d.麻醉方式7mzfs7}</td>
+                        <td>${d.麻醉医师7mzys7}</td>
+
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td><td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>${d.不足1周岁的年龄日bzyzsnlr}</td>
+                        <td>${d.新生儿出生体重克xsecstz}</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>${d.新生儿入院体重克xserytz}</td>
+                        <td>${d.小时ryqXs}</td>
+                        <td>${d.分钟ryqF}</td>
+                        <td>${d.颅脑损伤患者昏迷入院前时间入院前ryqT}</td>
+                        <td>${d.小时1ryhXs}</td>
+                        <td>${d.分钟1ryhF}</td>
+                        <td>${d.颅脑损伤患者昏迷入院后时间入院后ryhT}</td>
+                        <td>${d.是否有出院31天内再住院计划sfzzyjh}</td>
+                        <td>${d.目的md}</td>
+                        <td>${d.离院方式lyfs}</td>
+                        <td>${d.医嘱转社区卫生服务机构乡镇卫生院拟接收医疗机构名称wsyYljg}</td>
+                        <td>${d.总费用zfy}</td>
+                        <td>${d.自付金额zfje}</td>
+                        <td>${d.一般医疗服务费ylfuf}</td>
+                        <td>${d.一般治疗操作费zlczf}</td>
+                        <td>${d.护理费hlf}</td>
+
                     </tr>
                 </#list>
                 </tbody>
@@ -240,7 +820,7 @@
             var laypage = layui.laypage;
             //执行一个laypage实例
             laypage.render({
-                elem: '#LAY-EXPORT-TEST' //注意，这里的 test1 是 ID，不用加 # 号
+                elem: 'test1' //注意，这里的 test1 是 ID，不用加 # 号
                 ,count: 5 //数据总数，从服务端得到
                 ,toolbar: '#LAY-EXPORT-TEST' //操作1:启用自定义模板表格头部工具栏
                 ,defaultToolbar: [] //操作2:隐藏头部工具栏右侧的图标
