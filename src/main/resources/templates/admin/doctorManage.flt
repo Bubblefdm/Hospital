@@ -9,16 +9,26 @@
   <script src="../static/js/jquery.min.js"></script>
     <script src="../static/js/excel.js"></script>
     <script>
-         function exportTable() {
+         function exportTablexlsx() {
               // 获取头部和body
               var data = LAY_EXCEL.tableToJson(document.getElementById('LAY-EXPORT-TEST'));
               console.log(data);
               var exportData = [];
               exportData.push.apply(exportData, data.head);
               exportData.push.apply(exportData, data.body);
-            console.log(exportData);
-              LAY_EXCEL.exportExcel(exportData, '表格导出.xlsx', 'xlsx');
+              console.log(exportData);
+              LAY_EXCEL.exportExcel(exportData, '数据导出.xlsx', 'xlsx');
             }
+             function exportTablecsv() {
+                          // 获取头部和body
+                          var data = LAY_EXCEL.tableToJson(document.getElementById('LAY-EXPORT-TEST'));
+                          console.log(data);
+                          var exportData = [];
+                          exportData.push.apply(exportData, data.head);
+                          exportData.push.apply(exportData, data.body);
+                          console.log(exportData);
+                          LAY_EXCEL.exportExcel(exportData, '数据导出.csv', 'csv');
+                        }
     </script>
 </head>
 <body class="layui-layout-body">
@@ -36,9 +46,9 @@
                     <td><input name="certId" autocomplete="off" value="${certId!''}" class="layui-input lay-size=sm" ></td>
                     <td><button class="layui-btn" type="submit"><i class="layui-icon">&#xe615;</i></button></td> -->
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="layui-btn" type="submit"  onclick="exportTable()" ><i class="layui-icon">导出xls表格</i></button></td>
+                    <button class="layui-btn" type="submit"  onclick="exportTablexlsx()" ><i class="layui-icon">导出xls表格</i></button></td>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button class="layui-btn" type="submit"   ><i class="layui-icon">导出vcs表格</i></button></td>
+                    <button class="layui-btn" type="submit"  onclick="exportTablecsv()" ><i class="layui-icon">导出csv表格</i></button></td>
 
                   <!--  <td><button class="layui-btn" onclick="showAdd('/admin/doctorAdd')"><i class="layui-icon">&#xe608;</i> 添加</button><td> -->
 
